@@ -23,7 +23,7 @@ func DBInit() *gorm.DB {
 		}
 	}()
 
-	dsn := "host=localhost user=liramedika password=liramedika dbname=danadesa port=5432 sslmode=disable TimeZone=Asia/Taipei"
+	dsn := "host=localhost user=user password=password dbname=my_database port=5432 sslmode=disable TimeZone=Asia/Taipei"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
